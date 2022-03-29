@@ -1,0 +1,15 @@
+[2022-03-28 21:51:36,448] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: example_python_operator.sleep_for_2 2022-03-29T00:49:48.275884+00:00 [queued]>
+[2022-03-28 21:51:36,456] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: example_python_operator.sleep_for_2 2022-03-29T00:49:48.275884+00:00 [queued]>
+[2022-03-28 21:51:36,456] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-28 21:51:36,456] {taskinstance.py:881} INFO - Starting attempt 1 of 1
+[2022-03-28 21:51:36,456] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-28 21:51:36,464] {taskinstance.py:901} INFO - Executing <Task(PythonOperator): sleep_for_2> on 2022-03-29T00:49:48.275884+00:00
+[2022-03-28 21:51:36,466] {standard_task_runner.py:54} INFO - Started process 5663 to run task
+[2022-03-28 21:51:36,499] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'example_python_operator', 'sleep_for_2', '2022-03-29T00:49:48.275884+00:00', '--job_id', '5', '--pool', 'default_pool', '--raw', '-sd', '/home/arthur/datapipeline/.env/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py', '--cfg_path', '/tmp/tmpn_aig5ud']
+[2022-03-28 21:51:36,500] {standard_task_runner.py:78} INFO - Job 5: Subtask sleep_for_2
+[2022-03-28 21:51:36,517] {logging_mixin.py:112} INFO - Running <TaskInstance: example_python_operator.sleep_for_2 2022-03-29T00:49:48.275884+00:00 [running]> on host Desktop.localdomain
+[2022-03-28 21:51:36,726] {python_operator.py:114} INFO - Done. Returned value was: None
+[2022-03-28 21:51:36,729] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=example_python_operator, task_id=sleep_for_2, execution_date=20220329T004948, start_date=20220329T005136, end_date=20220329T005136
+[2022-03-28 21:51:41,442] {local_task_job.py:102} INFO - Task exited with return code 0
